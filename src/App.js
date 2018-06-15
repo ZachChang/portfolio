@@ -1,13 +1,12 @@
-import React     from 'react';
-import ReactDOM  from 'react-dom';
+import React from 'react';
 import './App.css';
-import { Sidebar, Segment, Button, Menu, Visibility, Responsive, Icon} from 'semantic-ui-react';
+import { Sidebar, Button, Menu, Visibility, Responsive, Icon} from 'semantic-ui-react';
+import { Link, Element , Events, animateScroll as scroll, scroller } from 'react-scroll'
 
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import Define from './component/Define';
 
-const durationFn = function(deltaTop) {
-    return deltaTop;
-};
+import ProductImg from './dist/images/product.png';
+import YellgarLogo from './dist/images/blacklogo.png';
 
 
 class App extends React.Component{
@@ -86,15 +85,15 @@ class App extends React.Component{
     return (
       <div>
 
-        {/* Following Menu  fixed的話必須放在 Sidebar.Pushable外*/}
+        {/* Following Menu  fixed的話必須放在 Sidebar.Pushable外 */}
           <div className={`ui top fixed hidden menu ${this.state.ShowNav}`} >
         {/* Menu for Desktop size */}
             <Responsive minWidth={Responsive.onlyTablet.minWidth}>
               <Menu>
-                <a><Link activeClass="active" className="item" to="test1" spy={true} smooth={true} duration={500} >Test 1</Link></a>
-                <a><Link activeClass="active" className="item" to="test2" spy={true} smooth={true} duration={500}>Test 2</Link></a>
-                <a><Link activeClass="active" className="item" to="test3" spy={true} smooth={true} duration={500} >Test 3</Link></a>
-                <a><Link activeClass="active" className="item" to="test4" spy={true} smooth={true} duration={500}>Test 4</Link></a>
+                <div><Link activeClass="active" className="item" to="test1" spy={true} smooth={true} duration={500} >Test 1</Link></div>
+                <div><Link activeClass="active" className="item" to="test2" spy={true} smooth={true} duration={500}>Test 2</Link></div>
+                <div><Link activeClass="active" className="item" to="test3" spy={true} smooth={true} duration={500} >Test 3</Link></div>
+                <div><Link activeClass="active" className="item" to="test4" spy={true} smooth={true} duration={500}>Test 4</Link></div>
               </Menu>
             </Responsive>
         {/* Menu for mobile size */}
@@ -106,45 +105,81 @@ class App extends React.Component{
           {/* Sidebar Menu */}
           <Sidebar  as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
             <Menu.Item name='sidebar-nav1'>
-              <a><Link activeClass="active" className="item" to="test1" spy={true} smooth={true} duration={500} >sidemenu1</Link></a>
+              <div><Link activeClass="active" className="item" to="test1" spy={true} smooth={true} duration={500} >sidemenu1</Link></div>
             </Menu.Item>
             <Menu.Item name='sidebar-nav2'>
-              <a><Link activeClass="active" className="item" to="test2" spy={true} smooth={true} duration={500} >sidemenu2</Link></a>
+              <div><Link activeClass="active" className="item" to="test2" spy={true} smooth={true} duration={500} >sidemenu2</Link></div>
             </Menu.Item>
             <Menu.Item name='sidebar-nav3'>
-              <a><Link activeClass="active" className="item" to="test3" spy={true} smooth={true} duration={500} >sidemenu3</Link></a>
+              <div><Link activeClass="active" className="item" to="test3" spy={true} smooth={true} duration={500} >sidemenu3</Link></div>
             </Menu.Item>
             <Menu.Item name='sidebar-nav4'>
-              <a><Link activeClass="active" className="item" to="test4" spy={true} smooth={true} duration={500} >sidemenu4</Link></a>
+              <div><Link activeClass="active" className="item" to="test4" spy={true} smooth={true} duration={500} >sidemenu4</Link></div>
             </Menu.Item>
           </Sidebar>
 
 
-        {/* Page Content */}
+        {/* Page 0 */}
         <Sidebar.Pushable >
           <Sidebar.Pusher dimmed={visible} onClick={this.handlePusher}>
-              <div class="ui inverted vertical masthead center aligned segment">
-                <div class="ui container">
-                <h1>All those moments will be lost in time... like tears in rain</h1>
-                  <div class="ui large secondary inverted pointing menu">
-                    <a class="active item"><Link activeClass="active" className="item" to="test1" spy={true} smooth={true} duration={500} >Test 1</Link></a>
-                    <a class="item"><Link activeClass="active" className="item" to="test2" spy={true} smooth={true} duration={500} >Test 2</Link></a>
-                    <a class="item"><Link activeClass="active" className="item" to="test3" spy={true} smooth={true} duration={500} >Test 3</Link></a>
-                    <a class="item"><Link activeClass="active" className="item" to="test4" spy={true} smooth={true} duration={500} >Test 4</Link></a>
+            {/* navbar */}
+            <div class="ui large secondary pointing menu" id="page-zero-menu">
+              <div class="right item">
+                <a class="item" id="page-zero-menu-content">ABOUT</a>
+              </div>
+            </div>
+            <div className="ui vertical stripe segment page-zero">
+              <div className="ui middle aligned stackable grid">
+                <div className="row" id="intro-yellgar">
+                  <div className="ten wide column">
+                    <img className="ui large image" id="product-img" alt="product images" src={ProductImg} />
+                  </div>
+                  <div className="six wide right floated column ui grid container">
+                    <img className="ui small image" id="yellgar-logo" src={YellgarLogo} alt="yellgar-logo"/>
+                    <span>Platform:</span><span id="subcontent">Desktop, tablet and mobile</span>
+                    <h3 className="ui header">Challenge</h3>
+                    <p>Build a dating website that efficiently connect each users. I supported this startup team testing and developing the idea with few time and resource.</p>
+                    <h3 className="ui header">My Role</h3>
+                    <p>I worked with the founders and a full-stack engineer to develop Yellgar from 0 to 1. <br/>I was responsible for the user experience, user interface, visual design, HTML & CSS, and setting development objectives.</p>
                   </div>
                 </div>
+              </div>
 
-            {/* After scroll Visibility component, show the nav */}
-            <Visibility once={false} onBottomPassed={() => this.setState({ ShowNav:"show_nav"})} onBottomPassedReverse={() => this.setState({ ShowNav:"hide_nav"})}>
-            </Visibility>
+              {/* design process */}
+              <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+                <div className="ui inverted divider container">
+                  <h3 className="ui header">Design Process</h3>
+                  <div className="ui large breadcrumb design-process">
+                    <Link activeClass="active" className="section" to="test1" spy={true} smooth={true} duration={500} >DEFINE</Link>
+                    <i className="right chevron icon divider"></i>
+                    <Link activeClass="active" className="section" to="test2" spy={true} smooth={true} duration={500} >BUILD MVP</Link>
+                    <i className="right chevron icon divider"></i>
+                    <Link activeClass="active" className="section" to="test3" spy={true} smooth={true} duration={500} >Testtest3</Link>
+                    <i className="right chevron icon divider"></i>
+                    <Link activeClass="active" className="section" to="test4" spy={true} smooth={true} duration={500} >Testrest4</Link>
+                    <i className="right chevron icon divider"></i>
+                    <Link activeClass="active" className="section" to="test2" spy={true} smooth={true} duration={500} >Testtest2</Link>
+                    <i className="right chevron icon divider"></i>
+                    <Link activeClass="active" className="section" to="test3" spy={true} smooth={true} duration={500} >Testtest3</Link>
+                    <i className="right chevron icon divider"></i>
+                    <Link activeClass="active" className="section" to="test4" spy={true} smooth={true} duration={500} >Testrest4</Link>
+                  </div>
+                  {/* After scroll Visibility component, show the nav */}
+                  <Visibility once={false} onBottomPassed={() => this.setState({ ShowNav:"show_nav"})} onBottomPassedReverse={() => this.setState({ ShowNav:"hide_nav"})}>
+                  </Visibility>
+                </div>
+              </Responsive>
+            </div>
 
-            <Element name="test1" className="element" >
-              test 1
-            </Element>
 
-            <Element name="test2" className="element">
+            {/* 開始內文 */}
+            <div name="test1">
+              <Define/>
+            </div>
+
+            <div name="test2">
               test 2
-            </Element>
+            </div>
 
             <Element name="test3" className="element">
               test 3
@@ -154,7 +189,6 @@ class App extends React.Component{
               test 4
             </Element>
             <a onClick={this.scrollToTop}>To the top!</a>
-            </div>
             </Sidebar.Pusher>
         </Sidebar.Pushable>
       </div>
