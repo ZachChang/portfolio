@@ -1,0 +1,14 @@
+$text-color: #a9a9a9;
+$text-dark-color: #7b7b7b;
+$title-color: #4CB5F5;
+$highlight-color: #307167;
+$deepblue: #015279;
+$black: #4A4A4A;
+$light-gray: #797D7F;
+$deep-gray: #979797;
+
+$small-space: 30px;
+
+@media only screen and (max-width: 600px) {
+	$small-space: 5px;
+}

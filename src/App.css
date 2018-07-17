@@ -1,167 +1,272 @@
-/*color
+.footer {
+  width: 100%;
+  background-color: #015279;
+  min-height: 40vh;
+  text-align: center; }
+  .footer .content {
+    padding-top: 30px;
+    padding-bottom: 50px; }
+    .footer .content .fa-linkedin {
+      color: white;
+      font-size: 36px;
+      margin-top: 20px; }
+    .footer .content h3 {
+      font-weight: 100;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      letter-spacing: 1px;
+      margin-top: 10px;
+      margin-bottom: 0px; }
+    .footer .content h4 {
+      font-weight: 100;
+      text-align: center;
+      color: white;
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin-top: 10px; }
+    .footer .content h5 {
+      font-weight: 100;
+      text-align: center;
+      color: white;
+      margin-top: 50px; }
 
-#a9a9a9 font gray
-#4E4E4E title gray
-#2E6AB0 title blue
-#ED702E orange
+.home {
+  min-height: 100vh; }
+  .home .content {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 120px; }
+    .home .content .title h1 {
+      color: #015279; }
+    .home .content .title h2 {
+      color: #015279;
+      font-weight: 200; }
+      .home .content .title h2 .contact {
+        color: #015279;
+        font-weight: 200;
+        text-decoration: underline; }
+    .home .content .title span {
+      color: #57BC90;
+      font-weight: 400; }
+    .home .content .project {
+      margin-top: 280px; }
+      .home .content .project .project-content {
+        margin-bottom: 150px; }
+      .home .content .project h1 {
+        color: #015279;
+        font-weight: 400;
+        width: 100%;
+        padding-bottom: 12px;
+        border-bottom: 1.5px solid #015279; }
+      .home .content .project img {
+        width: 100%;
+        height: auto; }
+      .home .content .project .intro {
+        margin-top: 30px; }
+        .home .content .project .intro h2 {
+          color: #4A4A4A; }
+        .home .content .project .intro h3 {
+          color: #797D7F;
+          font-weight: 200;
+          letter-spacing: .8px;
+          margin-top: 5px;
+          margin-bottom: 0px; }
+        .home .content .project .intro span {
+          font-weight: 500; }
+        .home .content .project .intro .project-button {
+          margin-top: 30px; }
+          .home .content .project .intro .project-button .right-button {
+            margin-left: 20px; }
+          .home .content .project .intro .project-button button {
+            color: #797D7F;
+            font-weight: 200;
+            font-size: 18px;
+            background-color: white;
+            border: 0.5px solid #979797;
+            padding: 20px 32px;
+            text-align: center;
+            text-decoration: none;
+            width: 250px;
+            cursor: pointer; }
+          .home .content .project .intro .project-button button:hover {
+            color: white;
+            background-color: #015279;
+            border: 0.5px solid #015279; }
+          .home .content .project .intro .project-button button:focus {
+            outline: 0; }
 
-*/
+@media only screen and (max-width: 900px) {
+  .home .content .project .intro .project-button {
+    display: grid; }
+    .home .content .project .intro .project-button .right-button {
+      margin-left: 0px;
+      margin-top: 30px; } }
 
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px !important;
+    line-height: 1.5em !important; }
+  h3 {
+    font-size: 14px !important; }
+  button {
+    font-size: 14px !important; }
+  .home .content .project .intro .project-button {
+    display: grid; }
+    .home .content .project .intro .project-button .right-button {
+      margin-left: 0px;
+      margin-top: 30px; }
+  .home .content {
+    width: 80%;
+    margin-top: 60px; }
+    .home .content .project {
+      margin-top: 60px; }
+      .home .content .project h1 {
+        font-size: 20px; }
+      .home .content .project .intro .project-button button {
+        padding: 15px 20px;
+        width: 200px; }
+  .home #page-zero-menu-content {
+    font-size: 12px;
+    margin-right: 0px; } }
 
 /*font*/
-h1, h2, h3, h4, span{
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-  color: #7b7b7b;
-}
-p{
- color: #a9a9a9;
-}
-.ui.header{
-  color: #2E6AB0 !important;
+h1, h2, h3, h4, h5, span {
+  font-family: 'Roboto',sans-serif,Arial !important;
+  color: #7b7b7b; }
+
+p {
+  color: #a9a9a9; }
+
+.ui.header {
+  color: #4CB5F5 !important;
   margin-bottom: 0px !important;
-  margin-top: 1em !important;
-}
+  margin-top: 1em !important; }
 
 /*nav-bar*/
 .ui.hidden.menu {
-  display: none;
-}
-#page-zero-menu{
-  border: none;
-}
-#page-zero-menu-content{
-  border-color: #ED702E;
-  color: #ED702E;
-  letter-spacing: 0.2em;
-  margin-right: 30px;
-}
-.show_nav{
-  display: block!important; 
-}
-.hide_nav{
-  display: none!important; 
-}
-.sidebar_top{
-  display: flex;
-  flex-direction: column;
-}
-.content_fixed{
-  flex-grow: 1;
-}
+  display: none; }
 
+#page-zero-menu {
+  border: none; }
+
+#page-zero-menu-content {
+  border-color: #015279;
+  color: #015279;
+  letter-spacing: 0.1em;
+  margin-right: 30px; }
+
+.show_nav {
+  display: block !important; }
+
+.hide_nav {
+  display: none !important; }
+
+.sidebar_top {
+  display: flex;
+  flex-direction: column; }
+
+.content_fixed {
+  flex-grow: 1; }
 
 /*page0*/
-#product-img{
-  width: 850px;
-}
-.page-zero span{
-  font-size: 1.33em;
-}
-.page-zero #subcontent{
-  color: #a9a9a9;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-#yellgar-logo{
-  padding-bottom: 50px;
-  width: 200px
-}
-#intro-yellgar{
-  padding-bottom: 6rem;
-}
-.page-zero .design-process{
-  margin-top: 1.5em !important;
-}
-.ui.breadcrumb a{
-  color: #ED702E !important;
-  letter-spacing: 0.1em;
-}
-.ui.breadcrumb .divider{
-  margin: 2px 10px 2px 10px !important;
-}
+#product-img {
+  width: 850px; }
 
+.page-zero span {
+  font-size: 1.33em; }
+
+.page-zero #subcontent {
+  color: black;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+#yellgar-logo {
+  padding-bottom: 50px;
+  width: 200px; }
+
+#intro-yellgar {
+  padding-bottom: 6rem; }
+
+.page-zero .design-process {
+  margin-top: 1.5em !important; }
+
+.ui.breadcrumb a {
+  color: #307167 !important;
+  letter-spacing: 0.1em; }
+
+.ui.breadcrumb .divider {
+  margin: 2px 10px 2px 10px !important; }
 
 /*home page default*/
-.ui.vertical.segment{
-  border: none !important;
-}
-.element{
-  border:none;
-}
+.ui.vertical.segment {
+  border: none !important; }
+
+.element {
+  border: none; }
+
 .masthead.segment {
   min-height: 600px;
-  padding: 1em 0em;
-}
+  padding: 1em 0em; }
+
 .masthead .logo.item img {
-  margin-right: 1em;
-}
+  margin-right: 1em; }
+
 .masthead .ui.menu .ui.button {
-  margin-left: 0.5em;
-}
+  margin-left: 0.5em; }
+
 .masthead h1.ui.header {
   margin-top: 2em;
   margin-bottom: 0em;
   font-size: 4em;
-  font-weight: normal;
-}
+  font-weight: normal; }
+
 .masthead h2 {
   font-size: 1.7em;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .ui.vertical.stripe {
-  padding: 8em 0em;
-}
+  padding: 8em 0em; }
+
 .ui.vertical.stripe h3 {
-  font-size: 2em;
-}
+  font-size: 2em; }
+
 .ui.vertical.stripe .button + h3,
 .ui.vertical.stripe p + h3 {
-  margin-top: 3em;
-}
+  margin-top: 3em; }
+
 .ui.vertical.stripe .floated.image {
-  clear: both;
-}
+  clear: both; }
+
 .ui.vertical.stripe p {
-  font-size: 1.33em;
-}
+  font-size: 1.33em; }
+
 .ui.vertical.stripe .horizontal.divider {
-  margin: 3em 0em;
-}
+  margin: 3em 0em; }
 
 .quote.stripe.segment {
-  padding: 0em;
-}
+  padding: 0em; }
+
 .quote.stripe.segment .grid .column {
   padding-top: 5em;
-  padding-bottom: 5em;
-}
+  padding-bottom: 5em; }
 
 .footer.segment {
-  padding: 5em 0em;
-}
-
+  padding: 5em 0em; }
 
 @media only screen and (max-width: 700px) {
   .secondary.pointing.menu .item,
   .secondary.pointing.menu .menu {
-    display: none;
-  }
+    display: none; }
   .secondary.pointing.menu .toc.item {
-    display: block;
-  }
+    display: block; }
   .masthead.segment {
-    min-height: 350px;
-  }
+    min-height: 350px; }
   .masthead h1.ui.header {
     font-size: 2em;
-    margin-top: 1.5em;
-  }
+    margin-top: 1.5em; }
   .masthead h2 {
     margin-top: 0.5em;
-    font-size: 1.5em;
-  }
-  #yellgar-logo{
-  padding-bottom: 20px;
-}
-}
+    font-size: 1.5em; }
+  #yellgar-logo {
+    padding-bottom: 20px; } }

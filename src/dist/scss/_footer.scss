@@ -1,0 +1,38 @@
+@mixin font-style() {
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  background-color: $deepblue;
+  min-height: 40vh;
+  text-align: center;
+  .content {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .fa-linkedin {
+      color: white;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    h3 {
+      @include font-style();
+      font-size: 24px;
+      letter-spacing: 1px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+    h4 {
+      @include font-style();
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+    h5 {
+       @include font-style();
+       margin-top: 50px;
+    }
+  }
+}

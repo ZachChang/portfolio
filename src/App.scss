@@ -1,0 +1,309 @@
+@import "src/dist/scss/_variable";
+@import "src/dist/scss/_footer";
+
+
+.home {
+  min-height: 100vh;
+  .content {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 120px;
+    .title {
+      h1 {
+        color: $deepblue;
+      }
+      h2 {
+        color: $deepblue;
+        font-weight: 200;
+        .contact {
+          color: $deepblue;
+          font-weight: 200;
+          text-decoration: underline;
+        }
+      }
+      span {
+        color: #57BC90;
+        font-weight: 400;
+      }
+    }
+    .project {
+      margin-top: 280px;
+      .project-content {
+        margin-bottom: 150px;
+      }
+      h1 {
+        color: $deepblue;
+        font-weight: 400;
+        width: 100%;
+        padding-bottom: 12px;
+        border-bottom: 1.5px solid $deepblue;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .intro {
+        margin-top: $small-space;
+        h2 {
+          color: $black;
+        }
+        h3 {
+          color: $light-gray;
+          font-weight: 200;
+          letter-spacing: .8px;
+          margin-top: 5px;
+          margin-bottom: 0px;
+        }
+        span {
+          font-weight: 500;
+        }
+        .project-button {
+          margin-top: $small-space;
+          .right-button {
+            margin-left: 20px;
+          }
+          button {
+            color: $light-gray;
+            font-weight: 200;
+            font-size: 18px;
+            background-color: white; 
+            border: .5px solid $deep-gray;
+            padding: 20px 32px;
+            text-align: center;
+            text-decoration: none;
+            width: 250px;
+            cursor: pointer;
+          }
+          button:hover {
+            color: white;
+            background-color: $deepblue;
+            border: .5px solid $deepblue;
+
+          }
+          button:focus {
+            outline:0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home .content .project .intro .project-button {
+    display: grid;
+    .right-button {
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px !important;
+    line-height: 1.5em !important;
+  }
+  h3 {
+    font-size: 14px !important;
+  }
+  button {
+    font-size: 14px !important;
+  }
+  .home .content .project .intro .project-button {
+    display: grid;
+    .right-button {
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+  }
+  .home {
+    .content {
+      width: 80%;
+      margin-top: 60px;
+      .project {
+        margin-top: 60px;
+        h1 {
+          font-size: 20px;
+        }
+        .intro {
+          .project-button{
+            button {
+              padding: 15px 20px;
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+    #page-zero-menu-content {
+      font-size: 12px;
+      margin-right: 0px;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+/*font*/
+h1, h2, h3, h4, h5, span{
+  font-family: 'Roboto',sans-serif,Arial !important;
+  color: $text-dark-color;
+}
+p{
+ color: $text-color;
+}
+.ui.header{
+  color: $title-color !important;
+  margin-bottom: 0px !important;
+  margin-top: 1em !important;
+}
+
+/*nav-bar*/
+.ui.hidden.menu {
+  display: none;
+}
+#page-zero-menu{
+  border: none;
+}
+#page-zero-menu-content{
+  border-color: $deepblue;
+  color: $deepblue;
+  letter-spacing: 0.1em;
+  margin-right: 30px;
+}
+.show_nav{
+  display: block!important; 
+}
+.hide_nav{
+  display: none!important; 
+}
+.sidebar_top{
+  display: flex;
+  flex-direction: column;
+}
+.content_fixed{
+  flex-grow: 1;
+}
+
+
+/*page0*/
+#product-img{
+  width: 850px;
+}
+.page-zero span{
+  font-size: 1.33em;
+}
+.page-zero #subcontent{
+  color: black;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#yellgar-logo{
+  padding-bottom: 50px;
+  width: 200px
+}
+#intro-yellgar{
+  padding-bottom: 6rem;
+}
+.page-zero .design-process{
+  margin-top: 1.5em !important;
+}
+.ui.breadcrumb a{
+  color: $highlight-color !important;
+  letter-spacing: 0.1em;
+}
+.ui.breadcrumb .divider{
+  margin: 2px 10px 2px 10px !important;
+}
+
+
+/*home page default*/
+.ui.vertical.segment{
+  border: none !important;
+}
+.element{
+  border:none;
+}
+.masthead.segment {
+  min-height: 600px;
+  padding: 1em 0em;
+}
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 2em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  padding: 5em 0em;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+  #yellgar-logo{
+  padding-bottom: 20px;
+}
+}
