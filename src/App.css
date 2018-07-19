@@ -1,3 +1,133 @@
+/*font*/
+h1, h2, h3, h4, h5, span {
+  font-family: 'Roboto',sans-serif,Arial !important;
+  color: #7b7b7b; }
+
+p {
+  color: #a9a9a9; }
+
+.ui.header {
+  color: #4CB5F5 !important;
+  margin-bottom: 0px !important;
+  margin-top: 1em !important; }
+
+@media only screen and (max-width: 767px) {
+  .hidden-ml {
+    display: none !important; } }
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px !important;
+    line-height: 1.5em !important; }
+  h3 {
+    font-size: 14px !important; }
+  button {
+    font-size: 14px !important; } }
+
+.home .home-intro {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 120px; }
+  .home .home-intro .title h1 {
+    color: #015279; }
+  .home .home-intro .title h2 {
+    color: #015279;
+    font-weight: 200; }
+    .home .home-intro .title h2 .contact {
+      color: #015279;
+      font-weight: 200;
+      text-decoration: underline; }
+  .home .home-intro .title span {
+    color: #57BC90;
+    font-weight: 400; }
+  .home .home-intro .project {
+    margin-top: 280px; }
+    .home .home-intro .project .project-content {
+      margin-bottom: 150px; }
+    .home .home-intro .project h1 {
+      color: #015279;
+      font-weight: 400;
+      width: 100%;
+      padding-bottom: 12px;
+      border-bottom: 1.5px solid #015279; }
+    .home .home-intro .project img {
+      width: 100%;
+      height: auto; }
+    .home .home-intro .project .intro {
+      margin-top: 40px; }
+      .home .home-intro .project .intro h2 {
+        color: #4A4A4A; }
+      .home .home-intro .project .intro h3 {
+        color: #797D7F;
+        font-weight: 300;
+        letter-spacing: .8px;
+        margin-top: 5px;
+        margin-bottom: 0px; }
+      .home .home-intro .project .intro span {
+        font-weight: 500; }
+      .home .home-intro .project .intro .project-button {
+        margin-top: 40px; }
+        .home .home-intro .project .intro .project-button .right-button {
+          margin-left: 20px; }
+        .home .home-intro .project .intro .project-button button {
+          color: #797D7F;
+          font-weight: 200;
+          font-size: 18px;
+          background-color: white;
+          border: 0.5px solid #979797;
+          padding: 20px 32px;
+          text-align: center;
+          text-decoration: none;
+          width: 250px;
+          cursor: pointer;
+          border-radius: 0px;
+          font-family: 'Roboto',sans-serif,Arial !important;
+          line-height: 20px; }
+        .home .home-intro .project .intro .project-button .btn {
+          color: #797D7F;
+          font-weight: 200;
+          font-size: 18px;
+          background-color: white;
+          border: 0.5px solid #979797;
+          padding: 20px 32px;
+          text-align: center;
+          text-decoration: none;
+          width: 250px;
+          cursor: pointer;
+          border-radius: 0px;
+          font-family: 'Roboto',sans-serif,Arial !important;
+          line-height: 20px; }
+        .home .home-intro .project .intro .project-button button:hover {
+          color: white;
+          background-color: #015279;
+          border: 0.5px solid #015279; }
+        .home .home-intro .project .intro .project-button button:focus {
+          outline: 0; }
+
+@media only screen and (max-width: 900px) {
+  .home .home-intro .project .intro .project-button {
+    display: grid; }
+    .home .home-intro .project .intro .project-button .right-button {
+      margin-left: 0px;
+      margin-top: 30px; } }
+
+@media only screen and (max-width: 600px) {
+  .home .home-intro .project .intro .project-button {
+    display: grid; }
+    .home .home-intro .project .intro .project-button .right-button {
+      margin-left: 0px;
+      margin-top: 30px; }
+  .home .home-intro {
+    width: 80%;
+    margin-top: 60px; }
+    .home .home-intro .project {
+      margin-top: 60px; }
+      .home .home-intro .project h1 {
+        font-size: 20px; }
+      .home .home-intro .project .intro .project-button button {
+        padding: 15px 20px;
+        width: 200px; } }
+
 .footer {
   width: 100%;
   background-color: #015279;
@@ -31,117 +161,74 @@
       color: white;
       margin-top: 50px; }
 
-.home {
-  min-height: 100vh; }
-  .home .content {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 120px; }
-    .home .content .title h1 {
-      color: #015279; }
-    .home .content .title h2 {
-      color: #015279;
-      font-weight: 200; }
-      .home .content .title h2 .contact {
-        color: #015279;
-        font-weight: 200;
-        text-decoration: underline; }
-    .home .content .title span {
-      color: #57BC90;
-      font-weight: 400; }
-    .home .content .project {
-      margin-top: 280px; }
-      .home .content .project .project-content {
-        margin-bottom: 150px; }
-      .home .content .project h1 {
-        color: #015279;
-        font-weight: 400;
-        width: 100%;
-        padding-bottom: 12px;
-        border-bottom: 1.5px solid #015279; }
-      .home .content .project img {
-        width: 100%;
-        height: auto; }
-      .home .content .project .intro {
-        margin-top: 30px; }
-        .home .content .project .intro h2 {
-          color: #4A4A4A; }
-        .home .content .project .intro h3 {
-          color: #797D7F;
-          font-weight: 200;
-          letter-spacing: .8px;
-          margin-top: 5px;
-          margin-bottom: 0px; }
-        .home .content .project .intro span {
-          font-weight: 500; }
-        .home .content .project .intro .project-button {
-          margin-top: 30px; }
-          .home .content .project .intro .project-button .right-button {
-            margin-left: 20px; }
-          .home .content .project .intro .project-button button {
-            color: #797D7F;
-            font-weight: 200;
-            font-size: 18px;
-            background-color: white;
-            border: 0.5px solid #979797;
-            padding: 20px 32px;
-            text-align: center;
-            text-decoration: none;
-            width: 250px;
-            cursor: pointer; }
-          .home .content .project .intro .project-button button:hover {
-            color: white;
-            background-color: #015279;
-            border: 0.5px solid #015279; }
-          .home .content .project .intro .project-button button:focus {
-            outline: 0; }
+.yellgar-page h2 {
+  font-size: 1.71428571rem !important;
+  font-weight: 400; }
 
-@media only screen and (max-width: 900px) {
-  .home .content .project .intro .project-button {
-    display: grid; }
-    .home .content .project .intro .project-button .right-button {
-      margin-left: 0px;
-      margin-top: 30px; } }
+.yellgar-page h3 {
+  font-size: 1.28571429rem !important;
+  font-weight: 200; }
 
-@media only screen and (max-width: 600px) {
-  h2 {
+.yellgar-page .yellgar-intro h2 {
+  margin-bottom: 4px !important; }
+
+.yellgar-page .yellgar-content {
+  margin: 0 auto; }
+
+.yellgar-page .color-block {
+  width: 66%;
+  height: 80%;
+  background-color: #F0F6FA;
+  position: absolute;
+  z-index: -3;
+  bottom: 20%;
+  right: -13%; }
+
+.yellgar-page .mobile-menu i {
+  padding-left: 30px;
+  padding-top: 10px;
+  font-size: 1.5em !important; }
+
+.yellgar-page .desktop-menu-title h3 {
+  color: #015279;
+  font-weight: 300; }
+
+.yellgar-page .desktop-menu-title h3:hover {
+  color: #57BC90; }
+
+.yellgar-page .desktop-process h2 {
+  margin-top: 10px; }
+
+.yellgar-page .desktop-process .design-process h3 {
+  font-weight: 400; }
+
+.yellgar-page .desktop-process .design-process h3:hover {
+  color: #57BC90; }
+
+@media only screen and (max-width: 768px) {
+  .yellgar-page h2 {
     font-size: 20px !important;
-    line-height: 1.5em !important; }
-  h3 {
+    line-height: 1.5em !important;
+    padding: 0px !important; }
+  .yellgar-page h3 {
+    font-size: 14px !important;
+    padding: 0px !important; }
+  .yellgar-page button {
     font-size: 14px !important; }
-  button {
-    font-size: 14px !important; }
-  .home .content .project .intro .project-button {
-    display: grid; }
-    .home .content .project .intro .project-button .right-button {
-      margin-left: 0px;
-      margin-top: 30px; }
-  .home .content {
-    width: 80%;
-    margin-top: 60px; }
-    .home .content .project {
-      margin-top: 60px; }
-      .home .content .project h1 {
-        font-size: 20px; }
-      .home .content .project .intro .project-button button {
-        padding: 15px 20px;
-        width: 200px; }
-  .home #page-zero-menu-content {
-    font-size: 12px;
-    margin-right: 0px; } }
-
-/*font*/
-h1, h2, h3, h4, h5, span {
-  font-family: 'Roboto',sans-serif,Arial !important;
-  color: #7b7b7b; }
-
-p {
-  color: #a9a9a9; }
-
-.ui.header {
-  color: #4CB5F5 !important;
-  margin-bottom: 0px !important;
-  margin-top: 1em !important; }
+  .yellgar-page .page-zero {
+    width: 84%;
+    padding-top: 20px !important; }
+    .yellgar-page .page-zero span {
+      font-size: 1em;
+      padding: 0px !important; }
+  .yellgar-page #yellgar-logo {
+    width: 120px;
+    padding-left: 0px !important;
+    padding-top: 12px !important; }
+  .yellgar-page #intro-yellgar {
+    padding-bottom: 3rem; }
+  .yellgar-page #padding-none {
+    padding: 0px !important; } }
 
 /*nav-bar*/
 .ui.hidden.menu {
@@ -152,9 +239,17 @@ p {
 
 #page-zero-menu-content {
   border-color: #015279;
-  color: #015279;
+  color: #797D7F;
   letter-spacing: 0.1em;
-  margin-right: 30px; }
+  margin-right: 30px;
+  font-weight: 300;
+  font-family: 'Roboto',sans-serif,Arial !important; }
+  #page-zero-menu-content i {
+    padding-right: 10px; }
+
+#page-zero-menu-content:hover {
+  border-color: #57BC90;
+  color: #57BC90; }
 
 .show_nav {
   display: block !important; }
@@ -170,8 +265,13 @@ p {
   flex-grow: 1; }
 
 /*page0*/
+.page-zero {
+  width: 90%;
+  margin: 0 auto !important; }
+
 #product-img {
-  width: 850px; }
+  width: 800px;
+  margin: 0 auto; }
 
 .page-zero span {
   font-size: 1.33em; }
@@ -254,6 +354,22 @@ p {
 .footer.segment {
   padding: 5em 0em; }
 
+.desktop-nav-icon {
+  border-color: #015279;
+  color: #015279;
+  letter-spacing: 0.1em; }
+
+.margin-right-none {
+  margin-right: 0px !important; }
+
+.margin-top-none {
+  margin-top: 0px !important; }
+
+@media only screen and (max-width: 767px) {
+  #page-zero-menu-content {
+    font-size: 12px;
+    margin-right: 0px; } }
+
 @media only screen and (max-width: 700px) {
   .secondary.pointing.menu .item,
   .secondary.pointing.menu .menu {
@@ -270,3 +386,243 @@ p {
     font-size: 1.5em; }
   #yellgar-logo {
     padding-bottom: 20px; } }
+
+.about-content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 120px; }
+  .about-content .about-intro {
+    padding-left: 40px !important; }
+  .about-content img {
+    width: 200px; }
+  .about-content h1 {
+    color: #015279;
+    padding: 0px !important; }
+  .about-content h3 {
+    padding: 0px !important;
+    font-weight: 300;
+    word-spacing: 3px; }
+    .about-content h3 .contact {
+      color: #015279;
+      font-weight: 300;
+      text-decoration: underline; }
+  .about-content .ability {
+    margin-top: 180px !important; }
+    .about-content .ability h2 {
+      padding: 0px !important;
+      color: #015279;
+      border-bottom: 1px solid #015279; }
+    .about-content .ability h3 {
+      padding: 0px !important;
+      margin-top: 5px; }
+    .about-content .ability .tools-title {
+      color: #015279;
+      font-weight: 400;
+      margin-bottom: 0px; }
+  .about-content .experience {
+    margin-top: 180px !important; }
+    .about-content .experience h2 {
+      color: #015279;
+      border-bottom: 1px solid #015279; }
+    .about-content .experience .ex-content {
+      margin-top: 40px !important; }
+      .about-content .experience .ex-content h3 {
+        color: #015279; }
+      .about-content .experience .ex-content .title {
+        font-weight: 400;
+        margin-bottom: 0px; }
+      .about-content .experience .ex-content .detail {
+        color: #797D7F; }
+
+@media only screen and (max-width: 768px) {
+  .about-content .ex-title {
+    padding: 1rem 1rem !important; }
+  .about-content .about-intro {
+    padding-left: 0px; }
+  .about-content img {
+    margin: 0 auto;
+    max-width: 55% !important; } }
+
+@media only screen and (max-width: 600px) {
+  .about-content {
+    width: 92%;
+    margin-top: 40px; }
+    .about-content .ability {
+      margin-top: 40px !important; }
+    .about-content .experience {
+      margin-top: 40px !important; }
+      .about-content .experience .ex-content {
+        margin-top: 20px !important; }
+        .about-content .experience .ex-content #year {
+          padding-bottom: 0px !important; }
+        .about-content .experience .ex-content .detail {
+          margin-bottom: 0px !important; } }
+
+.y-prcoess-frame {
+  min-height: 100vh;
+  margin-top: 250px;
+  padding-top: 110px; }
+  .y-prcoess-frame .summary {
+    background-color: #015279;
+    width: 60%;
+    min-height: 250px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -250px;
+    margin-top: 100px; }
+    .y-prcoess-frame .summary h2 {
+      margin: 0 auto;
+      color: white !important;
+      font-weight: 300; }
+  .y-prcoess-frame .y-prcoess-title {
+    background: #d8eff2;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #d8eff2 0%, #dff0d8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #d8eff2 0%, #dff0d8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #d8eff2 0%, #dff0d8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 40%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    margin-top: -50px;
+    z-index: 5; }
+    .y-prcoess-frame .y-prcoess-title h1 {
+      color: #015279;
+      padding-left: 50px; }
+  .y-prcoess-frame .t-contnet {
+    padding: 5% 50px 100px 50px;
+    width: 70%;
+    background-color: #F0F6FA;
+    margin-bottom: 80px; }
+    .y-prcoess-frame .t-contnet h2 {
+      margin-top: 50px;
+      margin-bottom: 8px; }
+    .y-prcoess-frame .t-contnet h3 {
+      margin-top: 0px; }
+  .y-prcoess-frame .mvp-content {
+    padding: 5% 50px 100px 50px;
+    width: 75%;
+    background-color: #F0F6FA; }
+    .y-prcoess-frame .mvp-content .wireframe {
+      position: absolute;
+      right: 20%;
+      max-width: 320px;
+      margin-top: -450px;
+      z-index: 5; }
+    .y-prcoess-frame .mvp-content .list {
+      width: 55%; }
+      .y-prcoess-frame .mvp-content .list .list-item {
+        margin-top: 30px; }
+  .y-prcoess-frame .mvp-outcome {
+    padding: 5% 50px 100px 50px;
+    width: 84%;
+    background-color: #F0F6FA;
+    margin-top: 320px; }
+    .y-prcoess-frame .mvp-outcome h3 {
+      width: 55%; }
+    .y-prcoess-frame .mvp-outcome .content-frame {
+      width: 80%; }
+    .y-prcoess-frame .mvp-outcome .outcome-img {
+      position: absolute;
+      right: 5%;
+      margin-top: -280px;
+      margin-bottom: 50px; }
+      .y-prcoess-frame .mvp-outcome .outcome-img img {
+        max-width: 320px;
+        vertical-align: top;
+        z-index: 5; }
+      .y-prcoess-frame .mvp-outcome .outcome-img .right {
+        padding-left: 20px; }
+  .y-prcoess-frame .mvp-oz {
+    background-color: #F0F6FA;
+    padding: 50px 50px 130px 50px;
+    margin-top: 450px; }
+    .y-prcoess-frame .mvp-oz .frame {
+      width: 80%;
+      margin: 0 auto; }
+      .y-prcoess-frame .mvp-oz .frame .oz-img {
+        margin-top: 50px;
+        text-align: center; }
+        .y-prcoess-frame .mvp-oz .frame .oz-img img {
+          width: 60%;
+          margin-bottom: 40px; }
+  .y-prcoess-frame .research-content {
+    padding: 5% 50px 100px 50px;
+    width: 75%;
+    background-color: #F0F6FA; }
+    .y-prcoess-frame .research-content .content-frame {
+      width: 80%; }
+    .y-prcoess-frame .research-content .customer-img {
+      position: absolute;
+      right: 15%;
+      margin-top: -250px; }
+  .y-prcoess-frame .full-width-content {
+    background-color: #F0F6FA;
+    padding: 50px 50px 130px 50px; }
+    .y-prcoess-frame .full-width-content img {
+      width: 100%;
+      margin-bottom: 40px; }
+  .y-prcoess-frame .persona-frame {
+    width: 100%;
+    background-color: #F0F6FA;
+    padding: 50px 50px 10px 50px;
+    margin-top: 180px; }
+    .y-prcoess-frame .persona-frame .content-frame {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 80px; }
+      .y-prcoess-frame .persona-frame .content-frame .persona-title {
+        font-weight: 400;
+        margin-bottom: 5px !important; }
+      .y-prcoess-frame .persona-frame .content-frame h2 {
+        margin-bottom: 30px; }
+      .y-prcoess-frame .persona-frame .content-frame h3 {
+        margin-top: 0px;
+        margin-bottom: 30px; }
+  .y-prcoess-frame .landing-frame {
+    width: 100%;
+    background-color: #F0F6FA;
+    padding: 50px 50px 40px 50px;
+    margin-top: 80px; }
+    .y-prcoess-frame .landing-frame .content-frame {
+      width: 80%;
+      margin: 0 auto; }
+    .y-prcoess-frame .landing-frame .landing-img {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 40px;
+      text-align: center; }
+      .y-prcoess-frame .landing-frame .landing-img img {
+        width: 100%;
+        margin-bottom: -100px; }
+
+@media only screen and (max-width: 767px) {
+  .y-prcoess-frame {
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-bottom: 120px; }
+    .y-prcoess-frame .y-prcoess-title {
+      width: 100%;
+      position: relative;
+      margin-top: 0px; }
+      .y-prcoess-frame .y-prcoess-title h1 {
+        padding-left: 0px;
+        margin: 0 auto; }
+    .y-prcoess-frame .t-contnet {
+      padding: 2px 25px 100px 25px;
+      width: 100%; }
+    .y-prcoess-frame .full-width-content {
+      padding: 50px 25px 130px 25px; }
+      .y-prcoess-frame .full-width-content .summary {
+        width: 90%;
+        padding: 15px;
+        margin-bottom: -200px;
+        margin-top: 100px; } }

@@ -1,0 +1,33 @@
+
+/*font*/
+h1, h2, h3, h4, h5, span{
+  font-family: 'Roboto',sans-serif,Arial !important;
+  color: $text-dark-color;
+}
+p{
+ color: $text-color;
+}
+.ui.header{
+  color: $title-color !important;
+  margin-bottom: 0px !important;
+  margin-top: 1em !important;
+}
+
+@media only screen and (max-width: 767px) {
+ .hidden-ml {
+  display: none !important;
+} 
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px !important;
+    line-height: 1.5em !important;
+  }
+  h3 {
+    font-size: 14px !important;
+  }
+  button {
+    font-size: 14px !important;
+  }
+}

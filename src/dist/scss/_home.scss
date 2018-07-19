@@ -1,0 +1,119 @@
+.home {
+  .home-intro {
+    width: $out-width;
+    margin: 0 auto;
+    margin-top: 120px;
+    .title {
+      h1 {
+        color: $deepblue;
+      }
+      h2 {
+        color: $deepblue;
+        font-weight: 200;
+        .contact {
+          color: $deepblue;
+          font-weight: 200;
+          text-decoration: underline;
+        }
+      }
+      span {
+        color: $water-green;
+        font-weight: 400;
+      }
+    }
+    .project {
+      margin-top: 280px;
+      .project-content {
+        margin-bottom: 150px;
+      }
+      h1 {
+        color: $deepblue;
+        font-weight: 400;
+        width: 100%;
+        padding-bottom: 12px;
+        border-bottom: 1.5px solid $deepblue;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .intro {
+        margin-top: $small-space;
+        h2 {
+          color: $black;
+        }
+        h3 {
+          color: $light-gray;
+          font-weight: 300;
+          letter-spacing: .8px;
+          margin-top: 5px;
+          margin-bottom: 0px;
+        }
+        span {
+          font-weight: 500;
+        }
+        .project-button {
+          margin-top: $small-space;
+          .right-button {
+            margin-left: 20px;
+          }
+          button {
+            @include btn-style();
+          }
+          .btn {
+            @include btn-style();
+          }
+          button:hover {
+            color: white;
+            background-color: $deepblue;
+            border: .5px solid $deepblue;
+
+          }
+          button:focus {
+            outline:0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home .home-intro .project .intro .project-button {
+    display: grid;
+    .right-button {
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home .home-intro .project .intro .project-button {
+    display: grid;
+    .right-button {
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+  }
+  .home {
+    .home-intro {
+      width: 80%;
+      margin-top: 60px;
+      .project {
+        margin-top: 60px;
+        h1 {
+          font-size: 20px;
+        }
+        .intro {
+          .project-button{
+            button {
+              padding: 15px 20px;
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

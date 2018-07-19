@@ -1,14 +1,36 @@
+@mixin btn-style() {
+  color: $light-gray;
+  font-weight: 200;
+  font-size: 18px;
+  background-color: white; 
+  border: .5px solid $deep-gray;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 250px;
+  cursor: pointer;
+  border-radius: 0px;
+  font-family: 'Roboto',sans-serif,Arial !important;
+  line-height: 20px;
+}
+@mixin gradient-green() {
+background: #d8eff2; /* Old browsers */
+background: -moz-linear-gradient(left, #d8eff2 0%, #dff0d8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #d8eff2 0%,#dff0d8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #d8eff2 0%,#dff0d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 $text-color: #a9a9a9;
 $text-dark-color: #7b7b7b;
 $title-color: #4CB5F5;
 $highlight-color: #307167;
 $deepblue: #015279;
+$lightblue: #F0F6FA;
 $black: #4A4A4A;
 $light-gray: #797D7F;
 $deep-gray: #979797;
+$water-green: #57BC90;
 
-$small-space: 30px;
-
-@media only screen and (max-width: 600px) {
-	$small-space: 5px;
-}
+$medium-space: 180px;
+$small-space: 40px;
+$out-width: 70%;

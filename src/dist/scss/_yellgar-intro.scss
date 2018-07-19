@@ -1,0 +1,266 @@
+.yellgar-page {
+  h2 {
+    font-size: 1.71428571rem !important;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 1.28571429rem !important;
+    font-weight: 200;
+  }
+  .yellgar-intro {
+    h2 {
+      margin-bottom: 4px !important;
+    }
+  }
+  .yellgar-content {
+    margin: 0 auto;
+  }
+  .color-block {
+    width: 66%;
+    height: 80%;
+    background-color: $lightblue;
+    position: absolute;
+    z-index: -3;
+    bottom: 20%;
+    right: -13%;
+  }
+  .mobile-menu {
+    i {
+      padding-left: 30px;
+      padding-top: 10px;
+      font-size: 1.5em !important;
+    }
+  }
+  .desktop-menu-title {
+    h3 {
+      color: $deepblue;
+      font-weight: 300;
+    }
+    h3:hover {
+      color: $water-green;
+    }
+  }
+  .desktop-process {
+    h2 {
+      margin-top: 10px;
+    }
+    .design-process {
+      h3 {
+        font-weight: 400;
+      }
+      h3:hover {
+        color: $water-green;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .yellgar-page {
+    h2 {
+      font-size: 20px !important;
+      line-height: 1.5em !important;
+      padding: 0px !important;
+    }
+    h3 {
+      font-size: 14px !important;
+      padding: 0px !important;
+    }
+    button {
+      font-size: 14px !important;
+    }
+  .page-zero{
+    width: 84%;
+    padding-top: 20px !important;
+    span {
+      font-size: 1em;
+      padding: 0px !important;
+    }
+  } 
+  #yellgar-logo {
+    width: 120px;
+    padding-left: 0px !important;
+    padding-top: 12px !important;
+  }
+  #intro-yellgar {
+    padding-bottom: 3rem;
+  }
+  #padding-none {
+    padding: 0px !important;
+  }
+  }
+}
+
+
+/*nav-bar*/
+.ui.hidden.menu {
+  display: none;
+}
+#page-zero-menu{
+  border: none;
+}
+#page-zero-menu-content{
+  border-color: $deepblue;
+  color: $light-gray;
+  letter-spacing: 0.1em;
+  margin-right: 30px;
+  font-weight: 300;
+  font-family: 'Roboto',sans-serif,Arial !important;
+  i {
+    padding-right: 10px;
+  }
+}
+#page-zero-menu-content:hover {
+  border-color: $water-green;
+  color: $water-green;
+}
+.show_nav{
+  display: block!important; 
+}
+.hide_nav{
+  display: none!important; 
+}
+.sidebar_top{
+  display: flex;
+  flex-direction: column;
+}
+.content_fixed{
+  flex-grow: 1;
+}
+
+
+/*page0*/
+.page-zero {
+  width: 90%;
+  margin:0 auto !important;
+}
+#product-img{
+  width: 800px;
+  margin: 0 auto;
+}
+.page-zero span{
+  font-size: 1.33em;
+}
+.page-zero #subcontent{
+  color: black;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#yellgar-logo{
+  padding-bottom: 50px;
+  width: 200px
+}
+#intro-yellgar{
+  padding-bottom: 6rem;
+}
+.page-zero .design-process{
+  margin-top: 1.5em !important;
+}
+.ui.breadcrumb a{
+  color: $highlight-color !important;
+  letter-spacing: 0.1em;
+}
+.ui.breadcrumb .divider{
+  margin: 2px 10px 2px 10px !important;
+}
+
+
+/*home page default*/
+.ui.vertical.segment{
+  border: none !important;
+}
+.element{
+  border:none;
+}
+.masthead.segment {
+  min-height: 600px;
+  padding: 1em 0em;
+}
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 2em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.footer.segment {
+  padding: 5em 0em;
+}
+.desktop-nav-icon {
+  border-color: $deepblue;
+  color: $deepblue;
+  letter-spacing: 0.1em;
+}
+
+
+.margin-right-none {
+  margin-right: 0px !important;
+} 
+.margin-top-none {
+  margin-top: 0px !important;
+}
+@media only screen and (max-width: 767px) {
+  #page-zero-menu-content {
+    font-size: 12px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+  #yellgar-logo{
+  padding-bottom: 20px;
+}
+}
