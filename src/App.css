@@ -111,6 +111,8 @@ p {
       margin-top: 30px; } }
 
 @media only screen and (max-width: 600px) {
+  .ui.animated.button .visible.content {
+    margin-right: 0px !important; }
   .home .home-intro .project .intro .project-button {
     display: grid; }
     .home .home-intro .project .intro .project-button .right-button {
@@ -124,8 +126,9 @@ p {
       .home .home-intro .project h1 {
         font-size: 20px; }
       .home .home-intro .project .intro .project-button button {
-        padding: 15px 20px;
-        width: 200px; } }
+        padding: 15px 20px !important;
+        width: 200px !important;
+        font-weight: 400 !important; } }
 
 .footer {
   width: 100%;
@@ -481,7 +484,7 @@ p {
     .y-prcoess-frame .summary h2 {
       margin: 0 auto;
       color: white !important;
-      font-weight: 300; }
+      font-weight: 400 !important; }
   .y-prcoess-frame .y-prcoess-title {
     background: #d8eff2;
     /* Old browsers */
