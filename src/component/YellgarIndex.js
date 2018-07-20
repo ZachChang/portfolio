@@ -88,10 +88,10 @@ class YellgarIndex extends React.Component{
                     <i className="fas fa-arrow-left"></i>back to portfolio
                   </div>
                 </Rlink>
-                <div className="desktop-menu-title"><Link activeClass="active" className="item" to="define" spy={true} smooth={true} duration={500}><h3>Define & Analysis</h3></Link></div>
-                <div className="desktop-menu-title"><Link activeClass="active" className="item" to="mvp" spy={true} smooth={true} duration={500}><h3>MVP Validation</h3></Link></div>
-                <div className="desktop-menu-title"><Link activeClass="active" className="item" to="research" spy={true} smooth={true} duration={500}><h3>Research</h3></Link></div>
-                <div className="desktop-menu-title"><Link activeClass="active" className="item" to="design" spy={true} smooth={true} duration={500}><h3>Design</h3></Link></div>
+                <div className="desktop-menu-title"><Link activeClass="active" className="item" to="define" spy={true} smooth={true} duration={500}><h3>1. Define & Analysis</h3></Link></div>
+                <div className="desktop-menu-title"><Link activeClass="active" className="item" to="mvp" spy={true} smooth={true} duration={500}><h3>2. MVP Validation</h3></Link></div>
+                <div className="desktop-menu-title"><Link activeClass="active" className="item" to="research" spy={true} smooth={true} duration={500}><h3>3. Research</h3></Link></div>
+                <div className="desktop-menu-title"><Link activeClass="active" className="item" to="design" spy={true} smooth={true} duration={500}><h3>4. Design</h3></Link></div>
               </Menu>
             </Responsive>
         {/* Menu for mobile size */}
@@ -103,16 +103,22 @@ class YellgarIndex extends React.Component{
           {/* Sidebar Menu */}
           <Sidebar  as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
             <Menu.Item name='sidebar-nav1'>
-              <div><Link activeClass="active" className="item" to="define" spy={true} smooth={true} duration={500}>Define & Analysis</Link></div>
+              <div className="mobile-sidebar"><Link activeClass="active" className="item" to="define" spy={true} smooth={true} duration={500}>1. Define</Link></div>
             </Menu.Item>
             <Menu.Item name='sidebar-nav2'>
-              <div><Link activeClass="active" className="item" to="mvp" spy={true} smooth={true} duration={500}>MVP Validation</Link></div>
+              <div className="mobile-sidebar"><Link activeClass="active" className="item" to="mvp" spy={true} smooth={true} duration={500}>2. MVP Validation</Link></div>
             </Menu.Item>
             <Menu.Item name='sidebar-nav3'>
-              <div><Link activeClass="active" className="item" to="research" spy={true} smooth={true} duration={500}>Research</Link></div>
+              <div className="mobile-sidebar"><Link activeClass="active" className="item" to="research" spy={true} smooth={true} duration={500}>3. Research</Link></div>
             </Menu.Item>
             <Menu.Item name='sidebar-nav4'>
-              <div><Link activeClass="active" className="item" to="design" spy={true} smooth={true} duration={500}>Design</Link></div>
+              <div className="mobile-sidebar"><Link activeClass="active" className="item" to="design" spy={true} smooth={true} duration={500}>4. Design</Link></div>
+            </Menu.Item>
+            <Menu.Item name='sidebar-nav5'>
+              <div className="mobile-sidebar"><div onClick={this.scrollToTop}>回至最頂</div></div>
+            </Menu.Item>
+            <Menu.Item name='sidebar-nav6'>
+                <Rlink to="/"><div className="mobile-sidebar">back to portfolio</div></Rlink>
             </Menu.Item>
           </Sidebar>
 
@@ -155,13 +161,13 @@ class YellgarIndex extends React.Component{
                   <div className="ui inverted divider container desktop-process">
                     <h2>Process</h2>
                     <div className="ui large breadcrumb design-process">
-                      <Link activeClass="active" className="section" to="define" spy={true} smooth={true} duration={500}><h3>Define & Analysis</h3></Link>
+                      <Link activeClass="active" className="section" to="define" spy={true} smooth={true} duration={500}><h3>1. Define & Analysis</h3></Link>
                       <i className="right chevron icon divider"></i>
-                      <Link activeClass="active" className="section" to="mvp" spy={true} smooth={true} duration={500}><h3>MVP Validation</h3></Link>
+                      <Link activeClass="active" className="section" to="mvp" spy={true} smooth={true} duration={500}><h3>2. MVP Validation</h3></Link>
                       <i className="right chevron icon divider"></i>
-                      <Link activeClass="active" className="section" to="research" spy={true} smooth={true} duration={500}><h3>Research</h3></Link>
+                      <Link activeClass="active" className="section" to="research" spy={true} smooth={true} duration={500}><h3>3. Research</h3></Link>
                       <i className="right chevron icon divider"></i>
-                      <Link activeClass="active" className="section" to="design" spy={true} smooth={true} duration={500}><h3>Design</h3></Link>
+                      <Link activeClass="active" className="section" to="design" spy={true} smooth={true} duration={500}><h3>4. Design</h3></Link>
                     </div>
                   </div>
                 </Responsive>

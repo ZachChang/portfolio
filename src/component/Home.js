@@ -48,7 +48,7 @@ class Home extends React.Component {
 									<Rlink to="/projects/yellgar">
 										<button>Development Process</button>
 									</Rlink>
-									<a target="_blank" href="https://www.yellgar.com">
+									<a target="_blank" href="https://www.yellgar.com" rel="noopener noreferrer" >
 										<button className="right-button">View Site</button>
 									</a>
 								</div>
@@ -66,7 +66,7 @@ class Home extends React.Component {
 										<Button.Content visible>Development Process</Button.Content>
 										<Button.Content hidden> comming soon</Button.Content>
 									</Button>
-									<a target="_blank" href="https://homeless-helper.doyouaflavor.tw">
+									<a target="_blank" href="https://homeless-helper.doyouaflavor.tw" rel="noopener noreferrer" >
 										<button className="right-button">View Site</button>
 									</a>
 								</div>

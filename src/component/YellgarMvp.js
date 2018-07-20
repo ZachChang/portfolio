@@ -8,7 +8,7 @@ import Oz from '../dist/images/oz.png';
 const YellgarMvp = props => (
   <div className="y-prcoess-frame">
     <div className="y-prcoess-title">
-      <h1>02. MVP Validation</h1>
+      <h1>2. MVP Validation</h1>
     </div>
     <div className="t-contnet">
       <h2>確認產品需求</h2>
@@ -38,7 +38,7 @@ const YellgarMvp = props => (
       </div>
         <div className="outcome-img">
           <img src={MvpLanding} alt="mvp wireframe"/>
-          <img className="right" src={MvpSign} alt="mvp wireframe"/>
+          <img className="right hidden-ml" src={MvpSign} alt="mvp wireframe"/>
         </div>
     </div>
     <div className="mvp-oz">
@@ -48,8 +48,8 @@ const YellgarMvp = props => (
         <div className="oz-img">
           <img src={Oz} alt="奧茲法步驟"/>
         </div>
-        <div className="summary">
-          <h2>在MVP測試的期間，我們購買廣告引導流量至註冊頁面，最終獲得600多名註冊會員，註冊轉換率約為15%。這樣的數據結果，讓我們認為這樣的產品是有價值、值得我們繼續投入開發。</h2>
+        <div className="mvp-summary">
+          <h2>在MVP測試的期間，我們購買廣告引導流量至註冊頁面，最終獲得600多名註冊會員，註冊轉換率約為15%。這樣的數據結果，讓我們認為此產品是有價值、值得我們繼續投入開發。</h2>
         </div>
       </div>
     </div>

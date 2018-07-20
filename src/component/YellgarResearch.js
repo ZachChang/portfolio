@@ -1,11 +1,14 @@
 import React from 'react';
 import Customer from '../dist/images/customer.png';
 import LandingResearch from '../dist/images/landingpage_research.png';
+import InfiniteScroll from '../dist/images/infinite_scroll.png';
+import Pagination from '../dist/images/pagination.png';
+import PaymentMethod from '../dist/images/payment_method.png';
 
 const YellgarResearch = props => (
-  <div className="y-prcoess-frame">
+  <div className="y-prcoess-frame research-mobile">
     <div className="y-prcoess-title">
-      <h1>03. Research</h1>
+      <h1>3. Research</h1>
     </div>
     <div className="research-content">
       <div className="content-frame">
@@ -14,7 +17,9 @@ const YellgarResearch = props => (
         <h3>1. 實際訪談: <br/>我們透過Yellgar或是同類型的約會網站將使用者約出來進行訪談，有表明身份是網站開發者的訪談，也有純粹的約會，在約會過程中以聊天的方式，了解使用者們的各種想法。</h3>
         <h3>2. 線上訪談: <br/>通常收到的回饋信內容都是抱怨沒有配對成功、網頁不好用、註冊的區域沒有會員等抱怨信，透過快速、親切的處理問題，與這些會員回信、建立信賴的關係，再深入的去訪談，了解產品的各種回饋。此外，我們也創辦了客服的官方帳號，透過此帳號與各個會員溝通，持續得去了解系統出現的問題、察覺尚未被滿足的需求。</h3>
       </div>
-      <img className="customer-img" src={Customer} alt="客服"/>
+      <div className="customer-img">
+        <img src={Customer} alt="客服"/>
+      </div>
     </div>
     <div className="persona-frame">
       <div className="content-frame">
@@ -85,6 +90,30 @@ const YellgarResearch = props => (
         <img src={LandingResearch} alt="landingpage-research"/>
       </div>
     </div>
+    <div className="landing-frame">
+      <div className="content-frame">
+        <h2>Member List Page Research: Pagination vs. Infinite Scrolling</h2>
+        <h3>會員頁的資訊呈現方式可以分為兩種：分頁式設計 (Pagination) 和瀑布流無限滾動設計 (Infinite Scroll)。約會網站使用者的搜尋互動方式應為反覆查找，在尋找的過程中也許會改變心意，是一個沒有已知項目的探索式搜尋，此外搜尋過程本身，就可以是一個極佳的體驗。Infinite Scroll 的呈現方式，更適合於約會網站上，無特定目標的探索式搜尋，此外在行動裝置上搭配滑動手勢，也能提供給使用者較好的體驗。</h3>
+        <h3>然而，約會網站剛成立，會員數量過少的時候，Infinite Scroll 的設計會暴露出會員數過少的致命問題，使用者透過無限向下滑動，100名會員在一分鐘內就可以快速的瀏覽完畢。因此在註冊會員數較少的城市，我們使用分頁式設計來呈現會員，在會員數大於一定數量的城市，我們採用 Infinite Scroll 的設計。</h3>
+      </div>
+      <div className="search-img">
+        <img src={Pagination} alt="Pagination"/>
+        <img className="right" src={InfiniteScroll} alt="InfiniteScroll"/>
+      </div>
+    </div>
+    <div className="payment-frame">
+      <div className="content-frame">
+        <h2>Payment Page Research</h2>
+        <h3 className="title">訂閱會員制 vs. 點數制</h3>
+        <h3>透過競爭對手分析，我們發現大部分的約會網站採用會員制: 付費後曾為該網站的會員，在訂閱為會員期限內可以使用所有的功能，到期後需要再次付款。少數的採用點數制：使用者可以將使用期限切分的比較短，要用多少時間就花多少錢。我們認為對於剛成立的的約會網站，由於會員數較少難以說服使用者訂閱，因此決定採取點數制的付費方式。此外，以點數制為基礎的付費方式，可以有更多的應用，例如我們在剛開啟的市場，採用免費增值的策略，使用者只要註冊便可以獲得免費的點數；點數也可以作為行動的獎勵，如會員成功上傳大頭照、完成豐富的個人介紹。</h3>
+        <h3 className="title">點數購買方案</h3>
+        <h3>在點數購買的體驗設計上，我們參考了錨定效應(Anchoring Effect) 呈現三個點數購買的方案，讓會員有三種不同的方案可以選擇，且一次購買越多的點數，單一點數的價格會越低。</h3>
+      </div>
+      <div className="payment-img">
+        <img src={PaymentMethod} alt="PaymentMethod"/>
+      </div>
+    </div>
+
   </div>
 );
 

@@ -25,9 +25,9 @@ class About extends React.Component {
 							</div>
 							<div className="about-intro eleven wide right floated column ui grid container">
 								<h1>Hi, I’m Zach Chang, a Digital Product Developer.</h1>
-								<h3>I have 2-year experience in digital product development as a UI/UX designer and front-end developer. </h3>
-								<h3>During my graduate studies, I devote to research the Persuasive Technology used in digital product development. In 2017 summer, I have received sponsorship by Taiwan innovation and entrepreneurship centerand, and went to Silicon Valley to learn the new trend of digital product design.</h3>
-								<h3>With the past experiences, I’m familiar with applying UX design method to research, then designing the user interface, interaction, and business model based on the research. I’m also familiar with using of CSS Pre-processors such as Sass in order to develop rich styling websites, and using ReactJS  to implement basic functions.Information technology industry is rapidly changing, I’m highly adaptable and passionate to learn new knowledges and skills.</h3>
+								<h3>I am a UI/UX designer and front-end developer with 2-year experience in the digital product development industry.</h3>
+								<h3>During my graduate studies, I devoted to research the Persuasive Technology used in digital product development. In summer 2017, I received a sponsorship by Taiwan Innovation and Entrepreneurship Center, of which allowed me to visit to Silicon Valley to learn the new trends in digital products and participate in many Startup events.</h3>
+								<h3>With my previous experiences, I’m familiar with applying UX design method to research, then designing the user interface, interaction, and business model based on the research. I’m also familiar with using of CSS Pre-processors such as Sass in order to develop rich styling websites, and using ReactJS  to implement basic functions.Information technology industry is rapidly changing, I’m highly adaptable and passionate to learn new knowledges and skills.</h3>
 								<h3>If you are looking for a digital product developer, feel free to
 									<Popup trigger={<span className="contact"> contact me.</span>} flowing hoverable>
 											<i className="far fa-envelope"></i> zachdesign01@gmail.com
