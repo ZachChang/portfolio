@@ -26,7 +26,7 @@ class Home extends React.Component {
 				<div className="home-intro">
 					<div className="title">
 						<h1>Hi, I’m Zach Chang, a Digital Product Developer.</h1>
-						<h2>I have 2-year experience in digital product development as a <span>UI/UX designer</span> and <span>front-end developer</span>. As a  Digital Product Developer, I enjoy applying programing, design and research to embrace the challenges that works can bring.</h2>
+						<h2>I have 3-year experience in digital product development as a <span>UI/UX designer</span> and <span>front-end developer</span>. As a  Digital Product Developer, I enjoy applying programing, design and research to embrace the challenges that works can bring.</h2>
 						<h2>
 							If you are looking for a digital product developer, please feel free to 
 							<Popup trigger={<span className="contact"> contact me</span>} flowing hoverable>
