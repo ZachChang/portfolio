@@ -57,20 +57,21 @@ const YellgarResearch = props => (
           <div className="eight wide column">
             <div className="frame-block">
               <h3 className="persona-title">Who are they?</h3>
-              <h3>年齡介於21至35歲，以女性為主，大部分為學生或初入職場者。</h3>
+              <h3>年齡介於21至35歲，以女性為主。大部分為學生，或初入職場者。</h3>
             </div>
             <div className="frame-block">
               <h3 className="persona-title">How do they find information?</h3>
-              <h3>透過桌機、筆電、手機瀏覽網頁時看到廣告，有興趣於是點擊進入網頁。本身有在使用類似的網站，透過朋友介紹或搜尋引擎搜尋到。</h3>
+              <h3>透過桌機、筆電、手機瀏覽網頁時看到廣告，有興趣於是點擊進入網頁。本身有在使用類似的網站，透過朋友介紹或搜尋引擎。</h3>
             </div>
             <div className="frame-block">
               <h3 className="persona-title">What do they want?</h3>
               <h3>他們追求物質的享受，想要跳脫目前的生活方式，旅行、體驗更多事物。</h3>
+            </div>
           </div>
           <div className="eight wide column">
             <div className="frame-block">
               <h3 className="persona-title">Pain Points</h3>
-              <h3>生活圈狹小，沒有拓展社交的管道。缺乏經濟來源，但礙於學生或其他原因無法長時間工作，渴望離開固有的生活圈。</h3>
+              <h3>生活圈狹小，沒有拓展社交的管道。缺乏經濟來源，但礙於學生或其他原因無法長時間工作，渴望離開固有的生活圈</h3>
             </div>
             <div className="frame-block">
               <h3 className="persona-title">Trigger to use the website</h3>
