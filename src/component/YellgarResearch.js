@@ -57,25 +57,24 @@ const YellgarResearch = props => (
           <div className="eight wide column">
             <div className="frame-block">
               <h3 className="persona-title">Who are they?</h3>
-              <h3>年齡介於35至65歲，以男性為主，經濟能力高，願意在娛樂、生活、旅遊上有大量的開銷。</h3>
+              <h3>年齡介於21至35歲，以女性為主，大部分為學生或初入職場者。</h3>
             </div>
             <div className="frame-block">
               <h3 className="persona-title">How do they find information?</h3>
-              <h3>透過桌機、筆電、手機瀏覽網頁時看到廣告，有興趣於是點擊進入網頁。本身有在使用類似的網站，透過搜尋引擎搜尋到。</h3>
+              <h3>透過桌機、筆電、手機瀏覽網頁時看到廣告，有興趣於是點擊進入網頁。本身有在使用類似的網站，透過朋友介紹或搜尋引擎搜尋到。</h3>
             </div>
             <div className="frame-block">
               <h3 className="persona-title">What do they want?</h3>
-              <h3>戀愛的感覺、陪伴的感覺。由於他們多數工作繁忙，在金錢充裕但時間不足的情況下，希望能用擁有較多的東西---金錢，去開啟一場約會，不一定是需要身體上的接觸，主要是去填補心靈上的需求。</h3>
-            </div>
+              <h3>他們追求物質的享受，想要跳脫目前的生活方式，旅行、體驗更多事物。</h3>
           </div>
           <div className="eight wide column">
             <div className="frame-block">
               <h3 className="persona-title">Pain Points</h3>
-              <h3>生活圈狹小，沒有認識對象的管道。工作繁忙、生活追求效率，沒有辦法慢慢培養感情。可能是短暫的停留在某個城市，需要短暫的伴侶</h3>
+              <h3>生活圈狹小，沒有拓展社交的管道。缺乏經濟來源，但礙於學生或其他原因無法長時間工作，渴望離開固有的生活圈。</h3>
             </div>
             <div className="frame-block">
               <h3 className="persona-title">Trigger to use the website</h3>
-              <h3>讓他們註冊網站的契機主要是該會員的數量和素質，會員素質包含會員的長相、年齡、聊天時的談吐是否符合他們條件。價錢反而不是他們主要考量的事情，只要能認識到滿意的對象，即使註冊成為會員的價格高昂，他們認為也是值得的。</h3>
+              <h3>觸發他們註冊網站的契機，可能是急迫的金錢需求(如學費、房租、醫療費用)，或有非常想達成的夢想，但意識到身處無法翻生的階級位置，因此需要透過某個管道，讓自己能快速的往上層的階級流動。網站的會員數和會員素質也是考量是否使用的重點。</h3>
             </div>
           </div>
         </div>
