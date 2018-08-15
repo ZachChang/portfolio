@@ -543,6 +543,8 @@ p {
       padding: 40px;
       margin-bottom: -250px;
       margin-top: 250px; }
+      .y-prcoess-frame .design-contnet .design-summary .font-bold {
+        font-weight: 400; }
       .y-prcoess-frame .design-contnet .design-summary h2 {
         color: white !important;
         font-weight: 200; }

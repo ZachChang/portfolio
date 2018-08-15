@@ -41,7 +41,7 @@ class Home extends React.Component {
 							<img src={YellgarImg} alt="productimg-yellgar"/>
 							<div className="intro">
 								<h2>Yellgar</h2>
-								<h3>Yellgar is a dating website which is focus on Sugar Dating. The functions of Yellgar, including member system, chatting room, searching other members, buying and using tokens for Yellgar, and paying the bill with credit card.</h3>
+								<h3>Yellgar is a dating website focuses on Sugar Dating. The functions of Yellgar includes member system, chatting room, searching members, buying and using tokens, and billing with credit card.</h3>
 								<h3><span>Platform: </span>Desktop, tablet and mobile</h3>
 								<h3><span>Responsibilities: </span>UX, UI, Visual design, Setting development objectives, and used CSS3 with Bootstrap to develop  RWD and rich styling WebPages.</h3>
 								<div className="project-button">
@@ -58,7 +58,7 @@ class Home extends React.Component {
 							<img src={Helper} alt="productimg-yellgar"/>
 							<div className="intro">
 								<h2>Homeless Helper</h2>
-								<h3>Homeless Helper is a website which integrates the resource from contributors to charity, and provide the resource to people who need. The functions of Homeless Helper, including the logging system with a calendar, and form filling and verification.</h3>
+								<h3>Homeless Helper is a website which integrates the resource from contributors to charity, and provides the resource to people who are in need. The functions of Homeless Helper includes a logging system with a calendar, and form filling and verification.</h3>
 								<h3><span>Platform: </span>Desktop, tablet and mobile</h3>
 								<h3><span>Responsibilities: </span>UX design and front-end develpoment. The front-end use SCSS, ReactJS and Material-Ui to build a web app with form validation, crud, grid list, and communicate with back-end via RESTful API.</h3>
 								<div className="project-button">

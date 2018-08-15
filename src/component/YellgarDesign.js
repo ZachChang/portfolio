@@ -11,7 +11,7 @@ const YellgarDesign = props => (
     </div>
     <div className="design-contnet">
     	<div className="content-frame">
-			<h3>根據MVP測試研究的結果，開始進行網站整體規劃和各個頁面的細部設計，不過一個約會網站並不是在網站架設好之後就完成，最重要的”內容”是會員，必須等到註冊會員達到一定的數量，才能呈現最好的服務跟體驗，因此在初步的設計階段最主要的考量是 : “如何在會員數非常少的成長期，仍然能給使用者良好的體驗，讓網站會員數穩定成長"。</h3>
+			<h3>A dating website is not finished before there are enough members because the most important part for a dating website is the members. The best service and experience of a dating website are based on the number of  active users. Therefore, the initial design consideration is “ How to create great user experience and let the members grow for the early stage? ”</h3>
     	</div>
     	<div className="design-img-frame">
     		<div className="design-img">
@@ -34,9 +34,9 @@ const YellgarDesign = props => (
 	    	</div>
     	</div>
 	    <div className="design-summary">
-	    	<h2>Yellgar currently has:<br/>- Over 3,000 early adaptor users with a return rate of 	41.2% (USA)<br/>- 2% paying customers since the first paid package launched (USA)</h2>
-	    	<h2>約會網站最重要的內容是會員本身，身為網站開發者的目標是把網站體驗設計好，並依不同的開發階段、擁有的會員數制定出合宜的策略，持續的優化網頁內容，提升轉換率與留存率。</h2>
-	    	<h2>開發此類型的約會網站無可避免的會遇到很多道德的問題跟挑戰，但開發的過程能夠了解人們真實的慾望和感受，對於一名開發者而言是非常珍貴的經驗。若想了解更多設計細節，歡迎透過email與我聯絡。</h2>
+	    	<h2 className="font-bold">Yellgar currently has:<br/>- Over 3,000 early adaptor users with a return rate of 	41.2% (USA)<br/>- 2% paying customers since the first paid package launched (USA)</h2>
+	    	<h2>The most important part of the dating site is the members. Therefore, as a dating website developer or designer, I have to adaptively design the best experience and strategy according to different stages of the website to improve the retention rate and the conversion rate.</h2>
+	    	<h2>It is inevitably to meet some moral problems and challenges while developing this type of dating site. However, the process of developing a dating site can understand people's real desires and feelings; it is also a very valuable experience for a developer. If you want to know more details of the development process, please feel free to contact me by email.</h2>
 	    </div>
     </div>
   </div>

@@ -148,7 +148,7 @@ class YellgarIndex extends React.Component{
                       <img className="ui small image" id="yellgar-logo" src={YellgarLogo} alt="yellgar-logo"/>
                       <span>Platform: Desktop, tablet and mobile</span>
                       <h2>Challenge</h2>
-                      <h3 className="margin-top-none">Build a dating platform that connect each users and help them start to date. The interaction  and experience of this site not only be able to let people feel privacy and security, but also help them to exposure their self in a safe way. In addition, this site has to find a special way to distinguish from the other dating sites.</h3>
+                      <h3 className="margin-top-none">Build a dating platform that connects each user and help them start to date others. The interaction and experience of this site would not only be able to allow people to feel private and secure, but also help them feel free to expose themselves. In addition, this site has to find a original way to distinguish from the other dating sites.</h3>
                       <h2>My Role</h2>
                       <h3 className="margin-top-none">I worked with the founders and a full-stack engineer to develop Yellgar from 0 to 1. <br/>I was responsible for the user experience design, user interface development, visual design, and setting development objectives.</h3>
                     </div>

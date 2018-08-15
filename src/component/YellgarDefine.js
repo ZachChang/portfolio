@@ -8,28 +8,28 @@ const YellgarDefine = props => (
       <h1>1. Define & Analysis</h1>
     </div>
     <div className="t-contnet">
-      <h2>此網站想達成的目標</h2>
-      <h3>Yellgar的目標是在目前眾多的交友平台中尋找不一樣的市場、獲利模式。Yellgar 希望打造一個安全、保密的環境，幫助人們展開互惠互利、快速的約會，在美國這種約會模式稱作 Sugar Arrangement or Sugar Dating。</h3>
-      <h2>此網站的目標使用者</h2>    
-      <h3>Yellgar 是雙邊平台，設定的主要市場是美國。我們媒合以下兩種TA：<br/>1.Sugar Daddy: 經濟能力高，年齡介於35至65歲，工作較繁忙，需要商務旅行或閒暇時的伴侶。<br/> 2.Sugar Baby: 享受生活，年輕、具吸引力，社交能力強。</h3>
-      <h2>為什麼選擇這個Idea</h2>
-      <h3>我們希望經營的項目是建立在剛性需求上。人類尋找伴侶的需求和對金錢的追逐永遠不會消失。此外，尋求Sugar Dating的人，通常有較高的經濟能力。因此，我們認為建立在"尋找Sugar Dating伴侶"這個需求的項目，是一筆經得起時間考驗且具有資本效應的生意。</h3>
+      <h2>What is the Goal of the Website?</h2>
+      <h3>Build a dating platform that connects each user and help them to start dating. The interaction and experience of this site not only allow people to feel the sense of privacy and security, but also help them to expose themselves in the safest way. In addition, this site has to distinguish itself from the other dating sites.</h3>
+      <h2>Who is the Target User of the Website?</h2>    
+      <h3>Yellgar is a two-sided platform which is a major market in the United States. We help matching two kinds of target user: <br/> 1. Sugar Daddy: Wealthy, but busy. They desire to be accompanied by young and attractive people. <br/> 2. Sugar Baby:  Sociable, attractive. They need money or mentor.</h3>
+      <h2>Why Sugar Dating?</h2>
+      <h3>We want to build a business model which is based on the inelastic demand. The need to pursuit better material comfort and companionship would never disappear, and moreover, sugar daddies are usually rich, and willing to pay for good service. Therefore, we believe that “searching for sugar dating partners” is a highly profitable business and will stand the test of time.</h3>
     </div>
     <div className="full-width-content">
-      <h2>分析目前同類型網站的使用狀況</h2>
-      <h3 className="content-frame">我們收集了目前在美國SEO排名前七名的約會網站，註冊成為他們的會員。接著，我們參考並應用Jaime Levy的 Competitive Analysis Matrix 進行競爭者分析，除了研究了各個網站的主要功能、介面設計風格、收費方式以外，我們註冊成為其他網站的會員，瀏覽它們的會員列表，以了解這類型網站的使用者樣貌。</h3>
+      <h2>Competitor Analysis</h2>
+      <h3 className="content-frame">We had collected the top seven dating sites from the SEO ranking in  United States. Then, we conducted competitor analysis according to Jaime Levy’s Competitive Analysis Matrix. In addition to research the main functions, user interface, user experience, and charging methods, we also signed up as their members to browse and chat with real Sugar Daddies and Babies.</h3>
       <img src={Competiter} alt="競爭對手分析圖表" className="hidden-ml"/>
-      <h2>分析結果</h2>
+      <h2>Results</h2>
       <List bulleted>
-          <List.Item><h3>大部分的網站為會員制，最少需要20美金成為該網站的會員，在使用期限內可以無限次數的使用網站功能。</h3></List.Item>
-          <List.Item><h3>雖然為雙邊平台，但主要收費對象皆為Sugar Daddy，Sugar Baby則為免費。</h3></List.Item>
-          <List.Item><h3>許多網站介面設計風格比較舊，但每月仍然有穩定的流量和一定的會員數。</h3></List.Item>
-          <List.Item><h3>大部分網站的註冊流程仍然非常繁雜，要填很多不重要的資料，使用體驗較差。</h3></List.Item>
-          <List.Item><h3>我們發現許多會員至少會在三個不同的約會平台註冊成為會員，原因可能為希望大量曝光自己，增加媒合成功的機會。</h3></List.Item>
-          <List.Item><h3>約會網站的使用者聯繫上後，希望能快速的交換其他較方便的聯絡方式，如電話、email等。</h3></List.Item>
+          <List.Item><h3>Most of the Sugar Dating sites are charged through the membership model. One would take at least 20 dollars to become a member, and all functions are available within the member's effective period.</h3></List.Item>
+          <List.Item><h3>Sugar Daddy is always charged for service, but Sugar Baby is usually free to use dating sites.</h3></List.Item>
+          <List.Item><h3>The interface style of some competitors are outdated, but there is still much traffic in their websites.</h3></List.Item>
+          <List.Item><h3>Most websites have bad registration experience because the process is long and complex.</h3></List.Item>
+          <List.Item><h3>We found that many members will sign up as members at least in three different dating platforms, probably because they want to expose themselves more and to increase the chances of a successful matching</h3></List.Item>
+          <List.Item><h3>After the dating match succeeds, users would like to exchange other contact information, such as phone number, and email.</h3></List.Item>
       </List>
       <div className="summary">
-        <h2>我們認為目前市場上的服務在使用體驗、商業模式上，仍有很大的改良和發展空間。<br/><br/>一名使用者至少會在三個不同的平台上註冊，因此也尚未有壟斷市場的平台存在。</h2>
+        <h2>We believe that there is still a lot of space for improvement and development for the user experience and business model in the current dating website market.<br/><br/>A user will sign up in at least on three different dating platforms, so there is no monopoly platform yet.</h2>
       </div>
     </div>
   </div>
