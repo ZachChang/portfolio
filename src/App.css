@@ -68,6 +68,10 @@ p {
         margin-top: 40px; }
         .home .home-intro .project .intro .project-button .right-button {
           margin-left: 20px; }
+        .home .home-intro .project .intro .project-button .mark-button {
+          color: #57bc90 !important;
+          border: .5px solid #57bc90 !important;
+          font-weight: 400 !important; }
         .home .home-intro .project .intro .project-button button {
           color: #797D7F;
           font-weight: 200;
