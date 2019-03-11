@@ -10,9 +10,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/projects/yellgar" component={YellgarIndex} />
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+        <Route path={process.env.PUBLIC_URL + "/about"} component={About} />
+        <Route path={process.env.PUBLIC_URL + "/projects/yellgar"} component={YellgarIndex} />
         <Footer/>
       </div>
     );

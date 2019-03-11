@@ -12,7 +12,7 @@ class About extends React.Component {
 				{/* nav */}
 				<div className="ui large secondary pointing menu" id="page-zero-menu">
 					<div className="left item">
-						<Rlink to="/">
+						<Rlink to={process.env.PUBLIC_URL + "/"}>
 							<div className="item" id="page-zero-menu-content">Zach</div>
 						</Rlink>
 					</div>

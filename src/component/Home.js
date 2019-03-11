@@ -13,12 +13,12 @@ class Home extends React.Component {
 				{/* nav */}
 				<div className="ui large secondary pointing menu" id="page-zero-menu">
 					<div className="left item">
-						<Rlink to="/">
+						<Rlink to={process.env.PUBLIC_URL + "/"}>
 							<div className="item" id="page-zero-menu-content">Zach</div>
 						</Rlink>
 					</div>
 					<div className="right item">
-						<Rlink to="/about">
+						<Rlink to={process.env.PUBLIC_URL + "/about"}>
 							<div className="item" id="page-zero-menu-content">about</div>
 						</Rlink>
 					</div>
@@ -28,7 +28,7 @@ class Home extends React.Component {
 						<h1>Hi, I’m Zach Chang, a Digital Product Developer.</h1>
 						<h2>I have 3-year experience in digital product development as a <span>UI/UX designer</span> and <span>front-end developer</span>. As a  Digital Product Developer, I enjoy applying programing, design and research to embrace the challenges that works can bring.</h2>
 						<h2>
-							If you are looking for a digital product developer, please feel free to 
+							If you are looking for a digital product developer, please feel free to
 							<Popup trigger={<span className="contact"> contact me</span>} flowing hoverable>
 	      						<i className="far fa-envelope"></i> zachdesign01@gmail.com
 							</Popup>
@@ -45,7 +45,7 @@ class Home extends React.Component {
 								<h3><span>Platform: </span>Desktop, tablet and mobile</h3>
 								<h3><span>Responsibilities: </span>UX, UI, Visual design, Setting development objectives, and used CSS3 with Bootstrap to develop  RWD and rich styling WebPages.</h3>
 								<div className="project-button">
-									<Rlink to="/projects/yellgar">
+									<Rlink to={process.env.PUBLIC_URL + "/projects/yellgar"}>
 										<button>Development Process</button>
 									</Rlink>
 									<a target="_blank" href="https://www.yellgar.com" rel="noopener noreferrer" >
