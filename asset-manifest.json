@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.4b035804.css",
   "main.css.map": "static/css/main.4b035804.css.map",
-  "main.js": "static/js/main.b7a404de.js",
-  "main.js.map": "static/js/main.b7a404de.js.map",
+  "main.js": "static/js/main.87ecbf49.js",
+  "main.js.map": "static/js/main.87ecbf49.js.map",
   "static/media/brand-icons.eot": "static/media/brand-icons.13db00b7.eot",
   "static/media/brand-icons.svg": "static/media/brand-icons.a1a749e8.svg",
   "static/media/brand-icons.ttf": "static/media/brand-icons.c5ebe0b3.ttf",
@@ -24,6 +24,7 @@
   "static/media/mvp_landingpage.png": "static/media/mvp_landingpage.bb42085b.png",
   "static/media/mvp_signup.png": "static/media/mvp_signup.b77f8d1b.png",
   "static/media/mvp_wireframe.png": "static/media/mvp_wireframe.da407d46.png",
+  "static/media/n01.gif": "static/media/n01.a391837c.gif",
   "static/media/outline-icons.eot": "static/media/outline-icons.701ae6ab.eot",
   "static/media/outline-icons.svg": "static/media/outline-icons.82f60bd0.svg",
   "static/media/outline-icons.ttf": "static/media/outline-icons.ad97afd3.ttf",
